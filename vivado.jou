@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 13 16:36:27 2026
+# Process ID         : 22568
+# Current directory  : C:/Users/raiab/Downloads/vivado_projects/project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21812 C:\Users\raiab\Downloads\vivado_projects\project\project.xpr
+# Log file           : C:/Users/raiab/Downloads/vivado_projects/project/vivado.log
+# Journal file       : C:/Users/raiab/Downloads/vivado_projects/project\vivado.jou
+# Running On         : DESKTOP-9D5FDM5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8311 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 22270 MB
+# Available Virtual  : 9943 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/raiab/Downloads/vivado_projects/project/project.xpr
+uupdate_compile_order -fileset sources_1launch_simulation
+source urat_loopback_tb.tcl
+relaunch_sim
+relaunch_sim

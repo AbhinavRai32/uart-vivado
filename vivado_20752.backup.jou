@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 13 13:24:35 2026
+# Process ID         : 20752
+# Current directory  : C:/Users/raiab/Downloads/vivado_projects/project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9056 C:\Users\raiab\Downloads\vivado_projects\project\project.xpr
+# Log file           : C:/Users/raiab/Downloads/vivado_projects/project/vivado.log
+# Journal file       : C:/Users/raiab/Downloads/vivado_projects/project\vivado.jou
+# Running On         : DESKTOP-9D5FDM5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8311 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 22270 MB
+# Available Virtual  : 14462 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/raiab/Downloads/vivado_projects/project/project.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/raiab/Downloads/vivado_projects/project/project.srcs/sim_1/new/urat_loopback_tb.v w ]
+add_files -fileset sim_1 C:/Users/raiab/Downloads/vivado_projects/project/project.srcs/sim_1/new/urat_loopback_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top urat_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top urat_loopback_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source urat_loopback_tb.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/urat_loopback_tb/utv/clk}} {{/urat_loopback_tb/utv/rst}} {{/urat_loopback_tb/utv/tx_start}} {{/urat_loopback_tb/utv/datax}} {{/urat_loopback_tb/utv/tx}} {{/urat_loopback_tb/utv/state}} {{/urat_loopback_tb/utv/m}} {{/urat_loopback_tb/utv/idle}} {{/urat_loopback_tb/utv/start}} {{/urat_loopback_tb/utv/data}} {{/urat_loopback_tb/utv/stop}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/urat_loopback_tb/utv/stop}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/urat_loopback_tb/urv/stop}} 
+relaunch_sim
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/urat_loopback_tb/urv/stop}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/urat_loopback_tb/urv/baud_count}} 
+current_wave_config {Untitled 4}
+add_wave {{/urat_loopback_tb/urv/bit_count}} 
+current_wave_config {Untitled 4}
+add_wave {{/urat_loopback_tb/urv/data_reg}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {3000000ns} -objects [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+close_sim
+launch_simulation
+source urat_loopback_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+ERROR: [XSIM ...] ... near "something": syntax error
+`timescale 1ns / 1ps
